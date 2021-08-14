@@ -1,0 +1,715 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-family: 'Raleway', sans-serif !important;background:#000;  }
+video{position:fixed;right:0;bottom:0;min-width: auto;min-height:100%;width:auto;height:auto;z-index:-100;/*background:url('images/about_bg.jpg') no-repeat;background-size:cover;*/ }
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.playbox {
+	position:absolute;
+	top:37%; 
+	left:45%;
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:8s;
+  -moz-animation-duration:8s;
+  animation-duration:8s;
+}
+
+.playbox.enter {
+  -webkit-animation-delay: 15s;
+  -moz-animation-delay: 15s;
+  animation-delay: 15s;
+}
+
+
+
+a{ text-decoration:none;}
+/*.dropdown-menu>li>a{ color:#3333 !important;}*/
+.adaa { position:absolute; bottom:100px; /*left:30%;*/ color:#FFFFFF; }
+.amer { position:absolute; bottom:130px; /*left:30%;*/ color:#FFFFFF; }
+.store{ position:absolute; bottom:150px;  color:#FFFFFF; width:100%; left:0px;}
+
+.humar{ position:absolute; top:300px;  color:#FFFFFF; width:100%; left:0px;}
+.designer { position:absolute; top:400px; /*left:30%;*/ color:#FFFFFF; }
+.showroom{ position:absolute; top:400px;  color:#FFFFFF; width:100%; left:0px;}
+.showroom2 { position:absolute; bottom:200px; /*left:30%;*/ color:#FFFFFF; }
+
+.campaign-list { position:absolute; top:45%; width:100%; /*left:30%;*/ color:#FFFFFF; }
+.campaign-list a{ color:#FFFFFF; text-decoration:none; }
+.campaign-list a:hover{ color:#eaeaea; text-decoration:none; }
+
+.campaign { position:absolute; bottom:250px; /*left:30%;*/ color:#FFFFFF; width:100%; }
+.showreel { position:absolute; top:200px; /*left:30%;*/ width:100%; }
+.journey { position:absolute; bottom:100px; /*left:30%;*/ color:#FFFFFF; }
+.adrishya_content { position:absolute; bottom:20px;  color:#FFFFFF; width:100%; left:0px;}
+.noor{ position:absolute; bottom:150px;  color:#FFFFFF;}
+.aks { position:absolute; top:150px;  color:#FFFFFF;}
+
+.adrishya { position:absolute; top:250px;  color:#FFFFFF;}
+.printad { position:absolute; bottom:20px; left:40%; color:#FFFFFF;}
+
+
+
+/*=========================
+  Icons
+ ================= */
+
+/* footer social icons */
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+	background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 30px;
+	height: 30px;
+	font-size:16px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:30px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+
+
+
+
+
+.journey-animation .enter {
+  -webkit-animation-delay: 20s !important;
+  -moz-animation-delay: 20s !important;
+  animation-delay: 20s !important;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+.footercopy{ font-size:10px;}
+.footercopy ul{ margin:10px 0px 0px 0px; padding:0px; list-style:none; display:inline-block; }
+.footercopy ul li{ margin:0px; padding:10px 10px 10px 10px 10px; list-style:none; display:inline-block; }
+.footercopy ul li:first-child::before{ content:' ';}
+.footercopy ul li::before{ content:'/'; padding-right:10px; padding-left:10px;}
+.navbar{ font-size:12px;}
+.explore-button a{ }
+.campaign-heading{font-size:20px !important; font-weight:200 !important;color:#fff; }
+.product-heading{font-size:75px !important; text-align:right; padding-right:20px; font-weight:200 !important; margin-top:-20px;  color:#fff; }
+.products-explore{border-radius:0px; padding:0 10px; border:0px; background:none; border:0px; color:#fff; margin-top:30px; font-size:25px; font-weight: bold;}
+.products-explore:hover{ color:#fff; text-decoration:none;}
+.adaa-animation {
+	/*position:absolute;
+	top:50%; 
+	right:30px;*/
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:2s;
+  -moz-animation-duration:2s;
+  animation-duration:2s;
+    -webkit-animation-delay: 7s !important;
+  -moz-animation-delay: 7s !important;
+  animation-delay: 7s !important;
+}
+
+.delhi-durbar-animation {
+	/*position:absolute;
+	top:50%; 
+	right:30px;*/
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:2s;
+  -moz-animation-duration:2s;
+  animation-duration:2s;
+    -webkit-animation-delay: 2s !important;
+  -moz-animation-delay: 2s !important;
+  animation-delay: 2s !important;
+}
+
+.aks-animation {
+	/*position:absolute;
+	top:50%; 
+	right:30px;*/
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:2s;
+  -moz-animation-duration:2s;
+  animation-duration:2s;
+    -webkit-animation-delay: 10s !important;
+  -moz-animation-delay: 10s !important;
+  animation-delay: 10s !important;
+}
+
+.amer-animation {
+	/*position:absolute;
+	top:50%; 
+	right:30px;*/
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:2s;
+  -moz-animation-duration:2s;
+  animation-duration:2s;
+    -webkit-animation-delay: 0.5s !important;
+  -moz-animation-delay: 0.5s !important;
+  animation-delay: 0.5s !important;
+}
+
+
+.carftmanship-animation {
+	/*position:absolute;
+	top:50%; 
+	right:30px;*/
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:2s;
+  -moz-animation-duration:2s;
+  animation-duration:3s;
+   -webkit-animation-delay:3s; /* Chrome, Safari, Opera */
+    animation-delay: 3s;
+}
+
+
+.kundan-meenakari-animation {
+	/*position:absolute;
+	top:50%; 
+	right:30px;*/
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:2s;
+  -moz-animation-duration:2s;
+  animation-duration:2s;
+   -webkit-animation-delay:0.2s; /* Chrome, Safari, Opera */
+    animation-delay:0.2s;
+}
+
+.store a{ color:#fff; text-decoration:none;}
+.store a:hover{ color:#fff; text-decoration:none;}
+
+.animate {
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+a.droptext {
+ color:#fff !important;
+}
+ a:hover.droptext{
+color:#fff !important;
+}
+
+.dropdown-menu ul li.animate a{ }
+.dropdown-menu ul li.animate a:hover{ }
+.navbar-bootsnipp {
+/*    background-color: rgb(255, 255, 255);
+	border-color: rgb(95, 176, 228);*/
+	border-radius: 0px;
+	margin-bottom: 0px;
+	z-index:99999999;
+}
+.navbar-bootsnipp:nth-of-type(2) {
+	border-top-width: 1px;
+	z-index: 50
+}
+
+.navbar-bootsnipp.affix-top {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+.navbar-bootsnipp.affix {
+	top: 0px;
+	width: 100%;
+}
+.navbar-bootsnipp .navbar-toggle .icon-bar {
+	background-color: rgb(95, 176, 228);
+}
+
+.navbar-bootsnipp .navbar-brand {
+	color: rgb(95, 176, 228);
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+
+.navbar-bootsnipp .navbar-nav > li > a {
+	/*border: 0px solid rgb(95, 176, 228);*/
+	color: #fff;
+	padding: 15px 14px;
+}
+
+.navbar-bootsnipp .navbar-nav > li > form > .input-group > input,
+.navbar-bootsnipp .navbar-nav > li > form > .input-group > .input-group-btn > .btn {
+	border-radius: 0px;
+}
+
+.navbar-bootsnipp .navbar-nav > li:not(.disabled).open > a,
+.navbar-bootsnipp .navbar-nav > li:not(.disabled).active > a,
+.navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:hover, 
+.navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:focus {
+	border-left-width: 5px;
+	/*color: #fff;*/
+	padding-left: 10px;
+}
+.navbar-bootsnipp .navbar-nav > li.disabled > a {
+	color: rgb(200, 200, 200);
+}
+
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu {
+	border-radius: 0;
+	margin-right: -1px;
+	min-width: 220px;
+	padding: 0px;
+}
+.navbar-bootsnipp .navbar-nav > li:not(.dropdown-right) > .dropdown-menu {
+	left: 0px;
+	margin-left: -1px;
+	right: auto;
+}
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu > li > a {
+	border-left: 0px solid rgb(95, 176, 228);
+/*	color:#FFFFFF;*/
+	font-size: 13px ;
+	font-weight: 400;
+	padding: 8px 15px;
+	white-space: nowrap;
+	background:none !important;
+	
+}
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu > li > a:hover { font-weight:bold;}
+
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu > li.active > a{ color:#FFFFFF}
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu > li.active > a:hover{ color:#000000 !important}
+
+.navbar .bootsnipp-profile > a {
+	padding-bottom: 9px; 
+	padding-top: 9px; 
+}
+.navbar .bootsnipp-profile > a > img {
+	border-radius: 50%;
+	width: 32px;
+}
+.navbar .bootsnipp-profile > .dropdown-menu {
+	width: 320px;
+}
+.navbar .bootsnipp-profile > .dropdown-menu > li > .row {
+	padding: 5px 15px;
+}
+.navbar .bootsnipp-profile > .dropdown-menu > li > .row img {
+	width: 100%;
+}
+
+.navbar-bootsnipp .bootsnipp-search {
+	display: none;
+}
+.navbar-bootsnipp .bootsnipp-search .form-control {
+	background-color: rgb(235, 235, 235);
+	border-radius: 0px;
+	border-width: 0px;
+	font-size: 24px;
+	padding: 30px 0px;
+}
+.navbar-bootsnipp .bootsnipp-search .form-control {
+	background-color: rgb(235, 235, 235);
+	border-radius: 0px;
+	border-width: 0px;
+	font-size: 24px;
+	padding: 25px 0px;
+}
+.navbar-bootsnipp .bootsnipp-search .form-control:focus {
+	border-color: transparent;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn {
+	padding: 14px 16px;
+	border-radius: 0px;
+}
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn.active,
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn:hover,
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn:focus {
+	padding: 14px 16px 14px 15px;
+}
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn-default {
+	background-color: rgb(245, 245, 245);
+}
+.nav-padding {
+	padding-top: 61px;
+}
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{ background:none !important; color:#FFF!important;}
+.nav > li > a:focus, .nav > li > a:hover{ background:none !important; color:#FFF!important;}
+@media screen and (min-width: 768px) {
+	
+	
+    .navbar-bootsnipp .navbar-brand {
+    	font-size: 20px;
+		height: auto;
+		padding: 30px 20px;
+	}
+	.navbar-bootsnipp .navbar-nav > li > a {
+		font-size: 13px;
+		letter-spacing: 1px;
+	}
+	.navbar-bootsnipp .navbar-nav > li:not(.disabled).open > a,
+	.navbar-bootsnipp .navbar-nav > li:not(.disabled).active > a,
+	.navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:hover, 
+	.navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:focus {
+		border-bottom-width: 5px;
+		border-left-width: 0px;
+		padding-bottom: 10px;
+		padding-left: 14px;
+	}
+
+	.navbar-bootsnipp .navbar-nav > li.disabled > a {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+
+	.navbar-bootsnipp .bootsnipp-search {
+		background-color: rgb(235, 235, 235);
+		display: block;
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		-webkit-transform: rotateX(-90deg);
+		-moz-transform: rotateX(-90deg);
+		-o-transform: rotateX(-90deg);
+		-ms-transform: rotateX(-90deg);
+		transform: rotateX(-90deg);
+		-webkit-transform-origin: 0 0 0;
+		-moz-transform-origin: 0 0 0;
+		-o-transform-origin: 0 0 0;
+		-ms-transform-origin: 0 0 0;
+		transform-origin: 0 0 0;
+		visibility: hidden;
+	}
+	.navbar-bootsnipp .bootsnipp-search.open {
+		-webkit-transform: rotateX(0deg);
+		-moz-transform: rotateX(0deg);
+		-o-transform: rotateX(0deg);
+		-ms-transform: rotateX(0deg);
+		transform: rotateX(0deg);
+		visibility: visible;	
+	}
+	.navbar-bootsnipp .bootsnipp-search > .container {
+		padding: 0px;
+	}    
+	
+}
+
+
+
+.navbar-nav {
+    margin: 7.5px 0 !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+	}
+	
+.bredcom ul{ list-style:none; margin:0px 0 0 0px; background:#555555; padding:0px 0 0 0; float:left; height:auto; width: auto;}
+.bredcom{ position:absolute;  width: auto;  left:0; top:100px; height:auto; opacity:0.7; font-size:12px; font-style: normal; z-index:5345345;}
+.bredcom ul li{ list-style:none; margin:0px; padding:0; float:left; height:auto; width: auto; color:#000; font-style:13px;  }
+.bredcom ul li a{ list-style:none; margin:0px; padding:0; float:left; height:auto; width: auto; color:#000; margin:0 0 0 0;text-decoration:none;display: inline-block;  }
+.bredcom ul li a:hover{ color:#fff;} 
+.arrowex111{margin:0px;padding:0px 10px 0px 20px;float:left;width: auto;color:#000;}
+.arrow-ex1 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+	width:auto;
+}
+.arrow-ex1 a {
+     background: none repeat scroll 0 0 #c7c7c7;
+    color: #000;
+    float: left;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 10px 0 14px;
+    position: relative;
+    text-decoration: none;
+	 transition: all 0.5s ease-in-out;
+}
+.arrow-ex1 a:after {
+     background: none repeat scroll 0 0 #c7c7c7;
+    border-style: solid;
+    border-width: 12px 0 12px 12px;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: -12px;
+    top: 0;
+    width: 0;
+	 transition: all 0.5s ease-in-out;
+	  color:#000;
+}
+.arrow-ex1 a:hover {
+    background: none repeat scroll 0 0 #fff;
+	 transition: all 0.5s ease-in-out;
+	 color:#000;
+}
+.arrow-ex1 a:hover:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fff;
+	 transition: all 0.5s ease-in-out;
+	  color:#000;
+}
+.arrow-ex2 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.arrow-ex2 a {
+    background: none repeat scroll 0 0 #c7c7c7;
+    border-radius: 0 0 0 0;
+     color:#000;
+    float: left;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 10px 0 14px;
+    position: relative;
+    text-decoration: none;
+	 transition: all 0.5s ease-in-out;
+}
+.arrow-ex2 a:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #c7c7c7;
+    border-style: solid;
+    border-width: 12px 0 12px 12px;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: -12px;
+    top: 0;
+    width: 0;
+	 transition: all 0.5s ease-in-out;
+	  color:#000;
+}
+.arrow-ex2 a:hover {
+    background: none repeat scroll 0 0 #fff;
+	 transition: all 0.5s ease-in-out;
+	  color:#000;
+}
+.arrow-ex2 a:hover:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fff;
+	 transition: all 0.5s ease-in-out;
+	  color:#000;
+}
+.arrow-ex3 {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    position: relative;
+	
+}
+.arrow-ex3 a {
+    background: none repeat scroll 0 0 #c7c7c7;
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 10px 0 24px;
+    position: relative;
+    text-decoration: none;
+	 transition: all 0.5s ease-in-out;
+}
+.arrow-ex3 a:before {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #c7c7c7;
+    border-style: solid;
+    border-width: 12px 0 12px 12px;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+.arrow-ex3 a:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #c7c7c7;
+    border-style: solid;
+    border-width: 12px 0 12px 12px;
+    content: "";
+    float: left;
+    height: 0;
+    position: absolute;
+    right: -12px;
+    top: 0;
+    width: 0;
+	 transition: all 0.5s ease-in-out;
+}
+.arrow-ex3 a:hover {
+    background: none repeat scroll 0 0 #fff;
+	 transition: all 0.5s ease-in-out;
+	  color:#000;
+}
+.arrow-ex3 a:hover:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fff;
+	 transition: all 0.5s ease-in-out;
+	  color:#000;
+}
+
+
+.arrow-left{ position:absolute;  top:45%; left:20px; width:auto; font-size:50px; }
+.arrow-left a{ color:#fff; text-decoration:none; opacity:0.7;}
+.arrow-left a:hover{ color:#fff; text-decoration:none;opacity:1;}
+.arrow-right{ position:absolute;  top:45%; right:20px; width:auto; font-size:50px;}
+.arrow-right a{ color:#fff; text-decoration:none; opacity:0.7;}
+.arrow-right a:hover{ color:#fff; text-decoration:none;opacity:1;}
+
+
+.thumbnail img {
+	width:auto;
+  
+padding-right:15px;
+}
+
+.textRight {
+  
+text-align : right;
+}
+
+
+
+/* Added some padding to make it more readable 
+
+div[class^="col-"] {
+    padding:40px;
+}*/
+.iconplay i{     position: absolute;
+    margin: auto;
+   
+    top: 55px;
+	color:#fff;
+    right: 110px;
+    font-size: 37px;}
+	
+	.dropdown-menu{ background:none;-webkit-box-shadow:none;box-shadow:none; border:0px; color:#fff;}
+.mt-0{ margin-top:0px }
+.mt-5{ margin-top:5px }
+.mt-15{ margin-top:15px }
+.mb-15{ margin-bottom:15px }
+.pt-15{ padding-top:15px }
+.pb-15{ padding-bottom:15px }
+@media screen and (max-width:767px) and (min-width: 200px) {
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{ background:#1f1f22; max-height:none;}
+body { background-size:auto !important;}}
+
+.border_contentall{border-left:1px solid #FFFFFF; min-height:65px;  padding-top: 8px; padding-bottom: 10px;}
