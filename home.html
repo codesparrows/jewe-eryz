@@ -12,9 +12,6 @@
         <link href="css/style.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,300,400" rel="stylesheet">
-
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -52,7 +49,8 @@ pauseButton.addEventListener("click", function() {
 	</script>
      
  <style type="text/css">
- video { 
+ 
+video { 
  position: fixed;
     top: 0%;
     left: 0%;
@@ -62,20 +60,19 @@ pauseButton.addEventListener("click", function() {
     height: auto;
     z-index: -1000;
  
-/* background: url('images/aranya_bg.jpg') no-repeat;
-*/  background-size: cover !important;
+ background:#000;
+  background-size: cover !important;
   transition: 1s opacity;
 }
 
-.adrishya { top:60%;}
- .product-heading{ margin-top:5px !important;}
 
-/* body { background: url('images/adrishya.jpg') no-repeat center center fixed !important;  background-size: cover !important;}
-*/ 
- .adrishya-animation {
-	/*position:absolute;
+ 
+ 
+
+.homebox {
+	position:absolute;
 	top:50%; 
-	right:30px;*/
+	right:25%;
   opacity:0;  /* make things invisible upon start */
   -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
   -moz-animation:fadeIn ease-in 1;
@@ -89,10 +86,20 @@ pauseButton.addEventListener("click", function() {
   -moz-animation-duration:2s;
   animation-duration:2s;
   
-     -webkit-animation-delay:6.5s; 
-    animation-delay:6.5s;
+  -webkit-animation-delay:4s; /* Chrome, Safari, Opera */
+    animation-delay: 4s;
 }
- @media only screen 
+
+.homebox .enter {
+  -webkit-animation-delay: 20s !important;
+  -moz-animation-delay: 20s !important;
+  animation-delay: 20s !important;
+}
+
+
+
+
+@media only screen 
   and (min-device-width: 200px) 
   and (max-device-width: 767px) 
   and (-webkit-min-device-pixel-ratio: 1) {
@@ -101,38 +108,25 @@ pauseButton.addEventListener("click", function() {
 	   height:100% !important;
 	   position:absolute !important;
 	   background:none ;
-	   position:absolute !important;
 	   }
-	   	    body { background: #000 none !important;  font-size:7px !important;  }  
-  .products-explore{ font-size:9px;}
 	 
-.product-heading{ font-size:15px !important; text-align:left; color:#fff !important;line-height:18px;} 
-.mcontentpages{ display:block!important;  width:100%!important; height:auto!important; position:absolute !important; top:460px!important;}
-.adrishya{ display:block !important; position:inherit !important;  height:auto;  }
-.mobileexplore{ padding-top:40px!important; padding-bottom:40px !important;}
-.adrishya_content{display:block !important; position: inherit !important;  height:auto; bottom:0px !important; float:left!important; width:100%!important; clear:both !important;}
-.exploremob{ padding-bottom:20px;}
-.mobiltextsmall{ font-size:7px; text-align:left;}
-.bredcom{/* transform: scale(0.7) !important;*/ left:0px !important; }
-.arrow-ex1 a{ font-size:7px !important; line-height:18px;}
-.arrow-ex2 a{ font-size:7px !important; line-height:18px;}
-.arrow-ex2 a:after{border-width:9px 0 9px 12px}
-.footercopy{ font-size:6px; }
-.social-circle li i { font-size:6px !important;}
-.social-circle li a { width:15px; height:15px;}
-.navbar-brand>img{ width:60%;} 
-.border_contentall{ border-left:0px; min-height:inherit;  }
+	   .homebox img{ width:50%; float:right; height:auto;}
 
 
 }
 
+
+ 
  </style>
   </head>
   <body>
-    <video poster="" id="bgvid" playsinline autoplay muted>
+  
+<video poster="images/1/slider.jpg" id="bgvid" playsinline autoplay muted>
   <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-<source src="aranya.webm" type="video/webm">
-<source src="aranya.mp4" type="video/mp4">
+<source src="1.webm" type="video/webm">
+<!-- <source src="home1.mp4" type="video/mp4"> -->
+<source src="1.mp4" type="video/mp4">
+
 </video>
 
 
@@ -158,7 +152,7 @@ pauseButton.addEventListener("click", function() {
 					                   
                     
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle animate" data-toggle="dropdown">Home <span class="[ caret ]"></span></a>
+						<a href="#" class="dropdown-toggle animate" data-toggle="dropdown">Home </a>
 						<ul class="dropdown-menu" role="menu">
                         	<li><a class="animate droptext" href="journey.html">Journey</a></li>
 							
@@ -167,7 +161,7 @@ pauseButton.addEventListener("click", function() {
                     
                     
                     <li class="dropdown">
-						<a href="#" class="dropdown-toggle animate" data-toggle="dropdown">Collection <span class="[ caret ]"></span></a>
+						<a href="#" class="dropdown-toggle animate" data-toggle="dropdown">Collection </a>
 						<ul class="dropdown-menu" role="menu">
                         	<li><a class="animate droptext" href="hunar.html">Hunar</a></li>
 							<li><a class="animate droptext" href="noor.html">Noor</a></li>
@@ -180,7 +174,7 @@ pauseButton.addEventListener("click", function() {
                     
                     
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle animate" data-toggle="dropdown">Media <span class="[ caret ]"></span></a>
+						<a href="show-reel.html" class="dropdown-toggle animate" data-toggle="dropdown">Media </a>
 						
 					</li>
 					<li><a class="animate droptext" href="store.html">Store</a></li>
@@ -191,85 +185,15 @@ pauseButton.addEventListener("click", function() {
 		
 	</nav>
 
-<div class="bredcom">
-<ul>
-<li><div class="arrow-ex1"><a href="home.html"><span class="arrowex111">Home</span></a></div></li>
-<li><div class="arrow-ex2"><a href="#"><span class="arrowex111">Aranya</span></a></div></li>
 
-</ul>
-</div>
-<div class="mcontentpages">
-<div class=" container-fluid">
+<div class="container-fluid">
 
-
-<div class="adrishya">
-
-<div class="adrishya-animation">
-
-<div class=" container-fluid">
-
-<div class="row text-center" style="margin:0px;">
-<div class="col-lg-5 Extra-Light  product-heading">aranya</div>
-
-<div class="col-lg-7 pt-15 pb-15  mobiltextsmall border_contentall">
-In the backdrop of tall trees, whispering greens and misty pathways lies the primeval world of nature, the ‘Aranya’<br>
-
-A Sublime collection of jewellery that respects the environs.<br>
-
-A range which been conceived with the abundance of nature, crafted scrupulously to redefine good taste with a touch of grace, reminiscent of lush green views & chivalric water bodies.
-
-
-</div>
-
-
-<div class="row">
-
-</div>
-</div>
-
-
-
-
-</div>
-
-
-
-</div>
-</div>
-
-
-
-<div class="adrishya_content mobileexplore">
-<div class="row"  style="margin:0px; padding:0px;">
-
-<div class="col-lg-12 text-right exploremob">
-<a href="aranya_products.html" class="explore-button extra-thin products-explore" >Explore</a> 
-</div>
-
-
-<div class="col-md-12 text-center" style="margin:0px; padding:0px;">
-                    <ul class="social-network social-circle" style="padding-bottom:10px;">
-                        <li><a href="https://www.facebook.com/birdhichand" class="icoFacebook" title="Facebook"  target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/birdhichand" class="icoTwitter" title="Twitter"  target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="icoGoogle" title="Google +"  target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>	<br>
-
-<div class="footercopy">
-<ul>
-<li>&copy; Code Sparrow Jewellers </li>
-<li>Privacy policy</li>
-<li>Terms and Condition</li>
-<li>Career</li>
-</ul>
-
- 
+<div class="homebox">
+<div class="enter">
+<div class="mobilerow">
+<img  src="images/logo1.png" style="width: 200px; margin-top: 20px; height: 200px" alt=""/></div></div>
 </div></div>
-</div>
 
-        
-</div>
-</div>        </div>
 <!-- <div class="bg_load"></div>
 <div class="wrapper">
     <div class="inner">
@@ -293,6 +217,10 @@ A range which been conceived with the abundance of nature, crafted scrupulously 
 })
 
 	</script>
+    
+    
+    
+    
   </body>
 </html>
 

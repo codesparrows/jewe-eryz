@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Home</title>
+    <title>BG World</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +19,13 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->   
     
-    <script type="text/javascript">
+    <!--[if lt IE 9]>
+<script>
+document.createElement('video');
+</script>
+<![endif]-->
+    
+  <!--  <script type="text/javascript">
 	var vid = document.getElementById("bgvid");
 var pauseButton = document.querySelector("#polina button");
 
@@ -47,11 +53,11 @@ pauseButton.addEventListener("click", function() {
   }
 })
 	</script>
-     
+     -->
  <style type="text/css">
  
-video { 
- position: fixed;
+ video { 
+  position: fixed;
     top: 0%;
     left: 0%;
     min-width: 100%;
@@ -63,41 +69,14 @@ video {
  background:#000;
   background-size: cover !important;
   transition: 1s opacity;
+  /*   transform: translateX(-50%) translateY(-50%);*/
+  /*  transform: translateX(-50%) translateY(-50%);
+ background: url('images/intro.jpg') no-repeat;
+  background-size: cover !important;
+  transition: 1s opacity;*/
 }
 
-
- 
- 
-
-.homebox {
-	position:absolute;
-	top:50%; 
-	right:25%;
-  opacity:0;  /* make things invisible upon start */
-  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
-
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
-
-  -webkit-animation-duration:2s;
-  -moz-animation-duration:2s;
-  animation-duration:2s;
-  
-  -webkit-animation-delay:4s; /* Chrome, Safari, Opera */
-    animation-delay: 4s;
-}
-
-.homebox .enter {
-  -webkit-animation-delay: 20s !important;
-  -moz-animation-delay: 20s !important;
-  animation-delay: 20s !important;
-}
-
-
-
+video {display: block;}
 
 @media only screen 
   and (min-device-width: 200px) 
@@ -107,93 +86,32 @@ video {
 	   video { width:100% !important; 
 	   height:100% !important;
 	   position:absolute !important;
-	   background:none ;
+	   background:none;
 	   }
-	 
-	   .homebox img{ width:50%; float:right; height:auto;}
-
-
-}
-
-
- 
+	   .playbox { top:45%; position:absolute;     vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+	left:32%;
+}}
+	   
  </style>
   </head>
   <body>
   
-<video poster="images/1/slider.jpg" id="bgvid" playsinline autoplay muted>
+<video poster="" id="bgvid" playsinline autoplay muted>
   <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
 <source src="home2.webm" type="video/webm">
-<!-- <source src="home1.mp4" type="video/mp4"> -->
 <source src="home2.mp4" type="video/mp4">
 
+
 </video>
+<div class=" container-fluid">
+<div class="row  text-center">
+<div class="playbox">
+<a href="home.html" class="btn extra-thin btn-default btn-lg btn-flat" style="border-radius:0px; background:none; border:0px; color:#fff !important; font-size:35px;">ENTER</a></div>
 
-
-<nav class="[ navbar navbar-fixed-top ][ navbar-bootsnipp animate ]" role="navigation">
-    	<div class="[ container-fluid ]">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="[ navbar-header ]">
-				<button type="button" class="[ navbar-toggle ]" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="[ sr-only ]">Toggle navigation</span>
-					<span class="[ icon-bar ]"></span>
-					<span class="[ icon-bar ]"></span>
-					<span class="[ icon-bar ]"></span>
-				</button>
-				<div class="[ animbrand ]">
-               	&nbsp;
-				</div>
-			</div>
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right ">
-					
-					                   
-                    
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle animate" data-toggle="dropdown">Home </a>
-						<ul class="dropdown-menu" role="menu">
-                        	<li><a class="animate droptext" href="journey.html">Journey</a></li>
-							
-                          </ul>
-					</li>
-                    
-                    
-                    <li class="dropdown">
-						<a href="#" class="dropdown-toggle animate" data-toggle="dropdown">Collection </a>
-						<ul class="dropdown-menu" role="menu">
-                        	<li><a class="animate droptext" href="hunar.html">Hunar</a></li>
-							<li><a class="animate droptext" href="noor.html">Noor</a></li>
-							
-                          </ul>
-					</li>
-                    
-                    
-                    
-                    
-                    
-					<li class="dropdown">
-						<a href="show-reel.html" class="dropdown-toggle animate" data-toggle="dropdown">Media </a>
-						
-					</li>
-					<li><a class="animate droptext" href="store.html">Store</a></li>
-                    
-				</ul>
-			</div>
-		</div>
-		
-	</nav>
-
-
-<div class="container-fluid">
-
-<div class="homebox">
-<div class="enter">
-<div class="mobilerow">
-<img src="images/logo_white.png" style="width: 400px; height: 51px" alt=""/></div></div>
-</div></div>
-
+</div>
+</div>
 <!-- <div class="bg_load"></div>
 <div class="wrapper">
     <div class="inner">
@@ -207,8 +125,9 @@ video {
     </div> 
   </div> -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <!-- <script src="js/jquery.min.js"></script>
+  
     <script src="js/bootstrap.min.js"></script>
         <script type="text/javascript">
 	$(window).load(function() {
@@ -216,11 +135,7 @@ video {
     $(".wrapper").fadeOut("slow");
 })
 
-	</script>
-    
-    
-    
-    
+	</script>-->
   </body>
 </html>
 
