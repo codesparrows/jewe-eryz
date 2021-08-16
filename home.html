@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Home</title>
+    <title>jweller</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -110,23 +110,25 @@ video {
 	   background:none ;
 	   }
 	 
-	   .homebox img{ width:50%; float:right; height:auto;}
+	   .homebox img{ width:50%; float:left; height:auto; margin-top: -70px;}
 
 
 }
 
-
+@media only screen 
+  and (min-device-width: 900px) 
+  and (max-device-width: 1867px){
+    .homebox img{ float:right; height:auto; margin-top: -150px;}
+  }
  
  </style>
   </head>
   <body>
   
-<video poster="images/1/slider.jpg" id="bgvid" playsinline autoplay muted>
+<video poster="images/home.jpg" id="bgvid" playsinline autoplay muted>
   <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-<source src="home24.webm" type="video/webm">
-<!-- <source src="home1.mp4" type="video/mp4"> -->
-<source src="home24.mp4" type="video/mp4">
-
+<source src="v1.mp4" type="video/webm">
+<source src="v1.mp4" type="video/mp4">
 </video>
 
 
@@ -152,21 +154,29 @@ video {
 					                   
                     
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle animate" data-toggle="dropdown">Home </a>
+						<a href="#" class="dropdown-toggle animate" data-toggle="dropdown">BG World <span class="[ caret ]"></span></a>
 						<ul class="dropdown-menu" role="menu">
                         	<li><a class="animate droptext" href="journey.html">Journey</a></li>
-							
-                          </ul>
+							<li><a class="animate droptext" href="designers.html">Designers</a></li>
+							<li><a class="animate droptext" href="craftmanship.html">Craftmanship</a></li>							
+							<li><a class="animate droptext" href="showroom.html">Showroom</a></li>
+							<li><a class="animate droptext" href="jewellery-design.html">Jewellery Design</a></li>
+                            <li><a class="animate droptext" href="kundan_meenakari.html">Kundan &amp; Meenakari</a></li>							
+						</ul>
 					</li>
                     
                     
                     <li class="dropdown">
-						<a href="#" class="dropdown-toggle animate" data-toggle="dropdown">Collection </a>
+						<a href="#" class="dropdown-toggle animate" data-toggle="dropdown">Collection <span class="[ caret ]"></span></a>
 						<ul class="dropdown-menu" role="menu">
                         	<li><a class="animate droptext" href="hunar.html">Hunar</a></li>
 							<li><a class="animate droptext" href="noor.html">Noor</a></li>
-							
-                          </ul>
+							<li><a class="animate droptext" href="Adrishya.html">Adrishya</a></li>							
+							<li><a class="animate droptext" href="aranya.html">Aranya</a></li>
+							<li><a class="animate droptext" href="amer.html">Amer</a></li>							
+							<li><a class="animate droptext" href="aks.html">Aks</a></li>
+                            <li><a class="animate droptext" href="adaa.html">Adaa</a></li><li><a class="animate droptext" href="delhidurbar.html">Delhi Durbar</a></li>
+						</ul>
 					</li>
                     
                     
@@ -174,8 +184,14 @@ video {
                     
                     
 					<li class="dropdown">
-						<a href="show-reel.html" class="dropdown-toggle animate" data-toggle="dropdown">Media </a>
-						
+						<a href="#" class="dropdown-toggle animate" data-toggle="dropdown">Media <span class="[ caret ]"></span></a>
+						<ul class="dropdown-menu" role="menu">
+                        	<li><a href="campaign.html" class="animate droptext">Campaign</a></li>
+							<li><a href="show-reel.html" class="animate droptext">Show reel</a></li>
+							<li><a href="#" class="animate droptext">Print Ad</a></li>
+                            <li><a href="editoral.html" class="animate droptext">Editoral</a></li>						
+							<li><a href="#" class="animate droptext">Event</a></li>
+						</ul>
 					</li>
 					<li><a class="animate droptext" href="store.html">Store</a></li>
                     
@@ -191,7 +207,7 @@ video {
 <div class="homebox">
 <div class="enter">
 <div class="mobilerow">
-<img  src="images/logo1.png" style="width: 200px; margin-top: 20px; height: 200px" alt=""/></div></div>
+<img src="images/logo_white.png" alt=""/></div></div>
 </div></div>
 
 <!-- <div class="bg_load"></div>
